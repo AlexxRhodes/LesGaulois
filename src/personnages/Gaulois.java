@@ -9,4 +9,9 @@ public class Gaulois {
 		name = n;
 		strength = s;
 	}
+	
+	public String getName()
+	{
+		return this.name;
+	}
 }
