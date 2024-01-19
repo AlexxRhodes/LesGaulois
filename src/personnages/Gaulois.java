@@ -1,8 +1,8 @@
 package personnages;
 
 public class Gaulois {
-	String name;
-	int strength;
+	private String name;
+	private int strength;
 	
 	public Gaulois(String n, int s)
 	{
@@ -23,5 +23,11 @@ public class Gaulois {
 	public void parler(String txt)
 	{
 		System.out.println("Le gaulois "+ getName()+ " : \""+ txt + "\"");
+	}
+	
+	public void frapper(Romain r)
+	{
+		System.out.println(getName()+ " envoie un grand coup dans la mâchoir de "+ r.getName());
+		r.recevoirCoup(strength/3);
 	}
 }

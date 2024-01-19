@@ -1,8 +1,8 @@
 package personnages;
 
 public class Romain {
-	String name;
-	int strength;
+	private String name;
+	private int strength;
 	
 	public Romain(String n, int s)
 	{
@@ -12,6 +12,23 @@ public class Romain {
 	
 	public String getName()
 	{
-		return this.name;
+		return name;
+	}
+	
+	public void parler(String txt)
+	{
+		System.out.println("Le romain "+ getName()+ " : \""+ txt + "\"");
+	}
+
+	public void recevoirCoup(int forceCoup)
+	{
+		strength -= forceCoup;
+		if(strength <= 0)
+		{
+			strength = 0;
+			parler("J'abandonne");
+		}else{
+			parler("Aïe !!");
+		}
 	}
 }
