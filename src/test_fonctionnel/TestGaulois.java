@@ -11,15 +11,11 @@ public class TestGaulois {
 		
 		Asterix.parler("Il est où Idefix ?");
 		Minus.parler("UN GAU ... UN GAUGAU... UN GAULOIIIIIS");
-		
-		//for(int i = 0; i<2; i++)
-		//{
-		//	Minus.recevoirCoup(3);
-		//}
-		
+
 		for(int i = 0; i<3; i++)
 		{
-			Asterix.frapper(Minus);
+//			Asterix.frapper(Minus);
+//			Minus.frapper(Asterix);
 		}
 	}
 }
