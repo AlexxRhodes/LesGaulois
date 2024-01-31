@@ -34,4 +34,11 @@ public class Village {
 			System.out.println("- " + villageois[i].getName());
 		}
 	}
+	
+	public void changerChef(Gaulois g) {
+		chef.parler("Je laisse mon grand bouclier au grand " + chef.getName());
+		this.chef = g;
+		chef.parler("Merci");
+
+	}
 }

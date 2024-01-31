@@ -10,11 +10,8 @@ public class TestSites {
 		
 		System.out.println("");
 		
-		village.ajouterVillageois(new Gaulois("Agecanonix", 1));
-		village.ajouterVillageois(new Gaulois("Assurancetourix", 2));
-		village.ajouterVillageois(new Gaulois("Astérix", 5));
-		village.ajouterVillageois(new Gaulois("Obelix", 15));
-		village.ajouterVillageois(new Gaulois("Prolix", 2));
+		Gaulois Abraracourcix = new Gaulois("Abraracourcix", 5);
+		village.ajouterVillageois(Abraracourcix);
 
 		System.out.println("");
 		System.out.println("");
@@ -26,18 +23,18 @@ public class TestSites {
 		
 		System.out.println("");
 		
-		camp.ajouterSoldat(new Soldat("Brutus", 5, grade.CENTURION));
-		camp.ajouterSoldat(new Soldat("Milexcus", 2, grade.SOLDAT));
-		camp.ajouterSoldat(new Soldat("Tullius Octopus", 2, grade.TESSERARIUS));
-		camp.ajouterSoldat(new Soldat("Ballondebaudrus", 3, grade.OPTIO));
-		
+		Soldat Briseradius = new Soldat("Briseradius", 4, grade.SOLDAT);
+		Soldat Chorus = new Soldat("Chorus", 4, grade.CENTURION);
+		camp.ajouterSoldat(Briseradius);
+		camp.ajouterSoldat(Chorus);
 		System.out.println("");
 		
-		village.afficherVillage();
+		village.changerChef(Abraracourcix);
+		System.out.println("");
+		camp.changerCommandant(Briseradius);
+		camp.changerCommandant(Chorus);
 		
 		System.out.println("");
-		
-		camp.afficherCamp();
 		
 	}
 }
