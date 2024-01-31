@@ -1,21 +1,12 @@
 package test_fonctionnel;
 
 import personnages.Gaulois;
-import personnages.Romain;
+import personnages.Druide;
 
 public class TestGaulois {
 	public static void main(String[] args) {
-		Gaulois Asterix = new Gaulois("Asterix", 8);
-		Romain Minus = new Romain("Minus", 6);
-		System.out.println(Asterix.getName());
+		Druide Assurancetourix = new Druide("Assurancetourix", 8);
+		Assurancetourix.fabriquerPotion(3);
 		
-		Asterix.parler("Il est où Idefix ?");
-		Minus.parler("UN GAU ... UN GAUGAU... UN GAULOIIIIIS");
-
-		for(int i = 0; i<3; i++)
-		{
-//			Asterix.frapper(Minus);
-//			Minus.frapper(Asterix);
-		}
 	}
 }
