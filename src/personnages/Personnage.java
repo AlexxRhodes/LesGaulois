@@ -1,8 +1,8 @@
 package personnages;
 
 public abstract class Personnage {
-	private String name;
-	private int strength;
+	protected String name;
+	protected int strength;
 	
 	protected Personnage(String n, int s)
 	{

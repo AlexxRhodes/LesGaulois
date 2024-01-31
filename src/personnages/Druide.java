@@ -12,7 +12,21 @@ public class Druide extends Gaulois {
 	
 	public void fabriquerPotion(int q) {
 		stockPotion = q;
-		forcePotion = (int)(Math.random()*5);
+		forcePotion = (int)(Math.random()*4) + 1;
 		this.parler(" J'ai concocté " + stockPotion + " doses de potion magique. Elle a une force de " + forcePotion);
+	}
+	
+	public void faireBoire(Gaulois g) {
+		if(this.stockPotion > 0) {
+			if(g.getName() != "Obélix") {
+				g.boost = forcePotion;
+				g.parler("Tiens " + g.getName() + " un peu de potion magique");
+				this.stockPotion -= 1;
+			}else {
+				parler("Non, Obélix Non !... Et tu le sais très bien !");
+			}
+		}else {
+			parler("Désolé Agecanonix il n'y a plus une seule goutte de potion.");
+		}
 	}
 }
