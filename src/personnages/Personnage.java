@@ -22,6 +22,7 @@ public abstract class Personnage {
 		System.out.println("Le "+ donnerAuteur() + ' ' + getName()+ " : \""+ txt + "\"");
 	}
 	
+
 	public void recevoirCoup(int forceCoup)
 	{
 		strength -= forceCoup;
@@ -37,7 +38,7 @@ public abstract class Personnage {
 	public void frapper(Personnage p)
 	{
 		System.out.println("Le "+ donnerAuteur() + ' '+ getName()+ " envoie un grand coup dans la mâchoir de "+ p.donnerAuteur() + ' ' + p.getName());
-		p.recevoirCoup(strength/3);
+		p.recevoirCoup(strength);
 	}
 
 }

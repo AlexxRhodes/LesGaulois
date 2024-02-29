@@ -4,6 +4,9 @@ import personnages.*;
 
 public class TestSites {
 	public static void main(String[] args) {
+		Stuff[] stuff = {Stuff.CASQUE};
+
+		
 		Gaulois Vercingetorix = new Gaulois("Vercingetorix", 5);
 		Village village = new Village(Vercingetorix);
 		village.getChef().parler("Je suis un grand guerrier et je vais créer mon village");

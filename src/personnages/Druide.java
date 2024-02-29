@@ -4,6 +4,7 @@ public class Druide extends Gaulois {
 	private int stockPotion;
 	private int forcePotion;
 	
+	
 	public Druide(String n, int s) {
 		super(n, s);
 		this.stockPotion = 0;
@@ -26,7 +27,7 @@ public class Druide extends Gaulois {
 				parler("Non, Obélix Non !... Et tu le sais très bien !");
 			}
 		}else {
-			parler("Désolé Agecanonix il n'y a plus une seule goutte de potion.");
+			parler("Désolé "+ g.getName()+ " il n'y a plus une seule goutte de potion.");
 		}
 	}
 }
